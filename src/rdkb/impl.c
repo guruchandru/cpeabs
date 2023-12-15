@@ -185,7 +185,7 @@ char* get_deviceMAC()
 {
 	if(strlen(deviceMAC) != 0)
 	{
-		CpeabsDebug("deviceMAC returned %s\n", deviceMAC);
+		CpeabsInfo("deviceMAC returned %s\n", deviceMAC);
 		return deviceMAC;
 	}
 
@@ -199,7 +199,7 @@ char* get_deviceMAC()
 	    CpeabsDebug("deviceMAC: %s\n",deviceMAC);
 	    CPEABS_FREE(macID);
 	}
-	CpeabsDebug("deviceMAC returned from lib is %s\n", deviceMAC);
+	CpeabsInfo("deviceMAC returned from lib is %s\n", deviceMAC);
 	return deviceMAC;
 }
 
